@@ -1,0 +1,32 @@
+.favorites-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  text-align: center;
+  gap: 20px;
+}
+
+.favorites-empty h2 {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.favorites-empty p {
+  font-size: 18px;
+  color: #b0b0b0;
+  max-width: 500px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .favorites-empty h2 {
+    font-size: 24px;
+  }
+
+  .favorites-empty p {
+    font-size: 16px;
+  }
+}
