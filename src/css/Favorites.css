@@ -1,52 +1,36 @@
-.favorites {
-  padding: 2rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.favorites h2 {
-  margin-bottom: 2rem;
-  text-align: center;
-  font-size: 2.5rem;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
 .favorites-empty {
-  text-align: center;
-  padding: 4rem 2rem;
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  margin: 2rem auto;
-  max-width: 600px;
+	min-height: 60vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.75rem;
+	text-align: center;
+	padding: 2rem 1rem;
+	background: var(--panel);
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	border-radius: 14px;
+	box-shadow: var(--shadow);
 }
 
 .favorites-empty h2 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  color: #e50914;
+	font-size: 1.8rem;
+	color: #fff;
 }
 
 .favorites-empty p {
-  color: #999;
-  font-size: 1.2rem;
-  line-height: 1.6;
+	color: var(--muted);
+	max-width: 520px;
+	line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+	.favorites-empty {
+		min-height: 50vh;
+		padding: 1.5rem 1rem;
+	}
 
-/* Animation for new favorites being added */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	.favorites-empty h2 {
+		font-size: 1.5rem;
+	}
 }
-
-.movies-grid > * {
-  animation: fadeIn 0.3s ease-out forwards;
-}
-
