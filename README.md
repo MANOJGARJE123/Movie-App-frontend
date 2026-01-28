@@ -1,5 +1,50 @@
 # React + Vite
 
+# Movie Explorer (React + Vite)
+
+A React app to browse popular movies from TMDB and manage a favorites list. Favorites are stored in localStorage so they persist across refreshes.
+
+## Features
+
+- Browse popular movies with posters and release dates
+- Add/remove favorites using the ❤️ button
+- Favorites page displayed in a grid layout
+- LocalStorage persistence
+
+## Tech Stack
+
+- React
+- Vite
+- React Router
+- TMDB API
+
+## Getting Started
+
+1) Install dependencies
+   - npm install
+
+2) Create a .env file in the project root
+   - VITE_MOVIE_API=your_tmdb_api_key
+   - VITE_BASE_URL=https://api.themoviedb.org/3
+
+3) Start the dev server
+   - npm run dev
+
+## Scripts
+
+- npm run dev: start dev server
+- npm run build: build for production
+- npm run preview: preview production build
+- npm run lint: run ESLint
+
+## Project Structure
+
+- src/components: UI components (MovieCard, NavBar)
+- src/page: pages (Home, Favorites)
+- src/contexts: MovieContext for favorites
+- src/services: TMDB API functions
+- src/css: app styles# React + Vite
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
